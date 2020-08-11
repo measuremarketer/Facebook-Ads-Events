@@ -1,6 +1,24 @@
 // Written by Prashanth Reniguntala
 
-/*
+// Created a class to create an object with the required parameters
+class objectParameters {
+  constructor(value, currency, content_ids, content_type, content_category, content_name) {
+    this.value = value;
+    this.currency = currency;
+    this.content_ids = content_ids;
+    this.content_type = content_type;
+    this.content_category = content_category;
+    this.content_name = content_name;
+  }
+}
+// calling the class with the required values will create an object. 
+var newProduct = new objectParameters(2500.00, "INR", 1212, "product", "Mens-Shoes", "Shoes for sports")
+console.log(newProduct);
+var newProduct1 = new objectParameters(3200.00, "INR", 1313, "product", "Mens-Sandles", "Shoes for running")
+console.log(newProduct1);
+
+
+// ViewContent object parameter wuth static values
 var prashanth = {value: 3500,
                  currency: "INR", 
                  content_ids: 2122, 
@@ -10,7 +28,8 @@ var prashanth = {value: 3500,
                 };
 console.log(typeof newObject);
 console.log(prashanth.content_ids);
-*/
+
+// ViewContent object parameters by using variables (we use GTM variables in GTM)
 
 var myValue = 3500;
 var myCurrency = "INR";
@@ -25,5 +44,5 @@ var prashanth = {value: myValue,
                  content_category: myContent_category,
                  content_name: myContent_name
                 };
-console.log(typeof newObject);
-console.log(prashanth.content_ids);
+console.log(typeof newObject); //returns Object
+console.log(prashanth.content_ids); //prints the property value of content_ids of object prashanth
