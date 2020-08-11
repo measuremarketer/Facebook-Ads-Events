@@ -1,0 +1,29 @@
+// Written by Prashanth Reniguntala
+
+/*
+var prashanth = {value: 3500,
+                 currency: "INR", 
+                 content_ids: 2122, 
+                 content_type: "product", 
+                 content_category: "furniture",
+                 content_name: "furniture-teakwood-table"
+                };
+console.log(typeof newObject);
+console.log(prashanth.content_ids);
+*/
+
+var myValue = 3500;
+var myCurrency = "INR";
+var myContent_ids = 2122;
+var myContent_type = "product";
+var myContent_category = "furniture";
+var myContent_name = "furniture-teakwood-table";
+var prashanth = {value: myValue,
+                 currency: myCurrency, 
+                 content_ids: myContent_ids, 
+                 content_type: myContent_name, 
+                 content_category: myContent_category,
+                 content_name: myContent_name
+                };
+console.log(typeof newObject);
+console.log(prashanth.content_ids);
